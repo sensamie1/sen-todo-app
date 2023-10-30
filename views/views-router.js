@@ -131,7 +131,7 @@ router.post('/tasks1/edit/:id', userService.isAuthenticatedForUpdate, taskServic
 // /views/tasks/delete/:id (user update task to delete by id)
 router.post('/tasks/delete/:id', userService.isAuthenticatedForUpdate, taskService.deleteStatus)
 
-// /views/tasks/:id (user permanently delete task by id)
+// /views/tasks/:id (user permanently deleted task by id)
 router.post('/tasks/:id', userService.isAuthenticatedForUpdate, taskService.deleteTask)
 
 // /views/tasks/edit/:id (get task for editing)
